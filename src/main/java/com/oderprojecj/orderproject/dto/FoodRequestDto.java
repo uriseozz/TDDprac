@@ -5,7 +5,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class MenuRequestDto {
+public class FoodRequestDto {
     private String name;
-    private Integer price;
+    private int price;
 }

@@ -30,11 +30,11 @@ public class Restaurant {
 
     //mappedBy:양방향관계 중 주인임을 명시
     //CascadeType.REMOVE:shop을 지울 때 menu리스트가 전부 삭제됨
-    @OneToMany(mappedBy = "restaurant",cascade = CascadeType.ALL)
-    List<Menu> menu = new ArrayList<>();
+//    @OneToMany(mappedBy = "restaurant",cascade = CascadeType.ALL)
+//    List<Food> foods = new ArrayList<>();
 
-    @OneToMany(mappedBy = "restaurant",cascade = CascadeType.ALL)
-    List<Orders> orders = new ArrayList<>();
+//    @OneToMany(mappedBy = "restaurant",cascade = CascadeType.ALL)
+//    List<Orders> orders = new ArrayList<>();
 
 
     public Restaurant(RestaurantRequestDto requestDto) {
@@ -44,7 +44,7 @@ public class Restaurant {
     }
 
     @Builder //안전한 객체 생성이 가능하다. 객체 초기 생성 시 사용, 이후 값변경이 필요하면 메서드를 이용한다.
-    public Restaurant(String name, Integer minOrderPrice, Integer deliveryFee){
+    public Restaurant(String name, int minOrderPrice, int deliveryFee){
         this.name = name;
         this.minOrderPrice = minOrderPrice;
         this.deliveryFee = deliveryFee;

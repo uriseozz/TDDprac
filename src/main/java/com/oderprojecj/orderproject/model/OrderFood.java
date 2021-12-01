@@ -11,26 +11,23 @@ import javax.persistence.*;
 @Getter
 @Setter
 @Entity  //테이블과 연계됨을 스프링에게 알려줌
-public class OrderMenu {
+public class OrderFood {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     private long id;
 
-//    @Column(nullable = false)
-    private Integer price;
+    @Column(nullable = false)
+    private int price;
 
-//    @Column(nullable = false)
-    private Integer quantity;
+    @Column(nullable = false)
+    private int quantity;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(nullable = false)
-    private Orders orders;
+    private Food food;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(nullable = false)
-    private Menu menu;
-
-    public OrderMenu(OrderRequestDto requestDto) {
+    public OrderFood(OrderRequestDto requestDto, Food food) {
+        this.food = food;
         this.price = requestDto.getPrice();
         this.quantity = requestDto.getQuantity();
     }

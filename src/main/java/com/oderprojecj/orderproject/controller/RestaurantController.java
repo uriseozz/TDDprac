@@ -16,13 +16,13 @@ import java.util.List;
 public class RestaurantController {
     private final RestaurantService restaurantService;
 
-    @GetMapping("/restaurants")
-    public List<Restaurant> getRestaurantsList() {
-        return restaurantService.getRestaurantsList();
-    }
-
     @PostMapping("/restaurant/register")
     public Restaurant registerRestaurant(@RequestBody RestaurantRequestDto requestDto) {
         return restaurantService.saveRestaurant(requestDto);
+    }
+
+    @GetMapping("/restaurants")
+    public List<Restaurant> getRestaurantsList() {
+        return restaurantService.getRestaurantsList();
     }
 }
