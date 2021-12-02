@@ -1,4 +1,4 @@
-package com.oderprojecj.orderproject.integration;
+package com.oderprojecj.orderproject;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -429,10 +429,10 @@ class FoodIntegrationTest {
         }
     }
 
-    @NoArgsConstructor
-    @AllArgsConstructor
     @Getter
     @Setter
+    @NoArgsConstructor
+    @AllArgsConstructor
     @Builder
     static class RestaurantDto {
         private Long id;

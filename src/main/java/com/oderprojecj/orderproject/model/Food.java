@@ -30,7 +30,7 @@ public class Food {
     private Restaurant restaurant;
 
 //    @OneToMany(mappedBy = "food",cascade = CascadeType.ALL)
-//    List<OrderFood> orderFoods = new ArrayList<>();
+//    List<foodOder> foodOrders = new ArrayList<>();
 
     public Food(Restaurant restaurant, FoodRequestDto requestDto) {
         this.restaurant = restaurant;

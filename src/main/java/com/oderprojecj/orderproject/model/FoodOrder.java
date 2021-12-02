@@ -1,6 +1,7 @@
 package com.oderprojecj.orderproject.model;
 
-import com.oderprojecj.orderproject.dto.OrderRequestDto;
+import com.oderprojecj.orderproject.dto.FoodOrderRequestDto;
+import com.oderprojecj.orderproject.dto.FoodOrderResponseDto;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -11,7 +12,7 @@ import javax.persistence.*;
 @Getter
 @Setter
 @Entity  //테이블과 연계됨을 스프링에게 알려줌
-public class OrderFood {
+public class FoodOrder {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     private long id;
@@ -26,10 +27,16 @@ public class OrderFood {
     @JoinColumn(nullable = false)
     private Food food;
 
-    public OrderFood(OrderRequestDto requestDto, Food food) {
+//    @ManyToOne
+//    @JoinColumn(nullable = false)
+//    private OrderEntity orderEntity;
+
+
+    public FoodOrder(Food food, int quantity, int price) {
         this.food = food;
-        this.price = requestDto.getPrice();
-        this.quantity = requestDto.getQuantity();
+        this.quantity = quantity;
+        this.price = price;
+
     }
 
 }

@@ -5,12 +5,17 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.List;
+
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class RestaurantRequestDto {
-    private String name;
-    private int minOrderPrice;
+public class OrderResponsDto {
+    private String restaurantName;
+    private List<FoodOrderResponseDto> foods;
     private int deliveryFee;
+    private int totalPrice;
+
 }
+
