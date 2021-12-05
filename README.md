@@ -27,7 +27,7 @@
             2. DB 테이블 ID (id)  
             
     
-    [API 명세서](https://www.notion.so/ad685d24a945406290c8649dcfb93e99)
+    [API 명세서](https://teamsparta.notion.site/ad685d24a945406290c8649dcfb93e99?v=a00e8c77671e41788979372e476dce0d)
     
 2. 음식 등록 및 메뉴판 조회
     - 음식점 ID 및 음식 정보 입력받아 등록
