@@ -26,9 +26,11 @@
             1. 등록 시 입력한 음식점 정보 (name, minOrderPrice, deliveryFee)
             2. DB 테이블 ID (id)  
             
-    
-    [API 명세서](https://teamsparta.notion.site/ad685d24a945406290c8649dcfb93e99?v=a00e8c77671e41788979372e476dce0d)
-    
+    - API 명세서<br>
+        ![image](https://user-images.githubusercontent.com/86363774/144737325-28516373-a9e9-4a45-ab0b-e1288bc59964.png)
+
+<br>
+
 2. 음식 등록 및 메뉴판 조회
     - 음식점 ID 및 음식 정보 입력받아 등록
         1. 음식점 ID (restaurantId)
@@ -45,8 +47,10 @@
             1. 등록 시 입력한 음식 정보 (name, price)
             2. DB 테이블 ID (id)
             
-    
-    [API 명세서](https://www.notion.so/065b1715462a4b259ecfc993da90f7c7)
+    - API 명세서<br>
+        ![image](https://user-images.githubusercontent.com/86363774/144737509-01b0e82e-adc8-4f71-bc3b-e68b6890fa69.png)
+
+<br>
     
 3. 주문 요청하기 및 주문 조회
     - 주문 요청 시 배달 음식점 및 음식 정보 입력받음
@@ -75,4 +79,7 @@
     - 주문 조회
         - 그동안 성공한 모든 주문 요청을 조회 가능
     
-    [API 명세서](https://www.notion.so/50187efd7a894d37849786d49bee96b0)
+    - API 명세서<br>
+        ![image](https://user-images.githubusercontent.com/86363774/144737305-faa71c44-8ffe-4671-943d-06d780cf58e1.png)
+
+    
